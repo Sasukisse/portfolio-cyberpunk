@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cyberpunk - Veille Technologique</title>
+    <link rel="stylesheet" href="styles/veille.css">
+</head>
+<body>
+    <div class="scanline"></div>
+    <canvas id="neural-network"></canvas>
+    
+    <nav class="cyber-nav">
+        <div class="nav-logo">
+            <span class="glitch" data-text="&lt;DEV/&gt;">&lt;DEV/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="projets.html">PROJETS</a></li>
+            <li><a href="parcours.html">PARCOURS</a></li>
+            <li><a href="veille.html" class="active">VEILLE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main class="veille-main">
+        <header class="page-header">
+            <h1 class="page-title">
+                <span class="glitch-text" data-text="VEILLE TECHNOLOGIQUE">VEILLE TECHNOLOGIQUE</span>
+            </h1>
+            <p class="page-subtitle">À l'affût des dernières innovations</p>
+        </header>
+
+        <!-- Categories Filter -->
+        <div class="categories-nav">
+            <button class="category-btn active" data-category="all">
+                <span class="icon">📡</span>
+                <span>TOUT</span>
+            </button>
+            <button class="category-btn" data-category="ai">
+                <span class="icon">🤖</span>
+                <span>INTELLIGENCE ARTIFICIELLE</span>
+            </button>
+            <button class="category-btn" data-category="web">
+                <span class="icon">🌐</span>
+                <span>WEB & FRAMEWORKS</span>
+            </button>
+            <button class="category-btn" data-category="security">
+                <span class="icon">🔐</span>
+                <span>CYBERSÉCURITÉ</span>
+            </button>
+            <button class="category-btn" data-category="devops">
+                <span class="icon">⚙️</span>
+                <span>DEVOPS & CLOUD</span>
+            </button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card" data-category="ai">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
+                    <span class="article-date">Février 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">L'avènement des modèles GPT-5</h3>
+                    <p class="article-excerpt">
+                        Les nouveaux modèles de langage GPT-5 révolutionnent l'industrie avec des capacités
+                        de raisonnement multimodal jamais vues. L'impact sur le développement logiciel est
+                        considérable, permettant des assistants de code encore plus performants.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">Multimodal</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-category="web">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">WEB & FRAMEWORKS</span>
+                    <span class="article-date">Janvier 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">React Server Components en production</h3>
+                    <p class="article-excerpt">
+                        Les React Server Components deviennent le standard pour les applications Next.js modernes.
+                        Cette approche hybride client/serveur permet des performances exceptionnelles et une
+                        meilleure expérience développeur.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js 15</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-category="security">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">CYBERSÉCURITÉ</span>
+                    <span class="article-date">Janvier 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Cryptographie post-quantique</h3>
+                    <p class="article-excerpt">
+                        Avec l'émergence des ordinateurs quantiques, la cryptographie post-quantique devient
+                        essentielle. Les nouvelles normes NIST offrent une protection contre les menaces futures
+                        tout en restant compatibles avec les systèmes existants.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Quantum</span>
+                        <span class="tag">Crypto</span>
+                        <span class="tag">NIST</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-card" data-category="devops">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">DEVOPS & CLOUD</span>
+                    <span class="article-date">Décembre 2025</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Kubernetes 1.30 et l'IA Edge</h3>
+                    <p class="article-excerpt">
+                        La dernière version de Kubernetes intègre nativement le support pour les workloads
+                        d'IA en edge computing. Cette évolution permet de déployer des modèles ML directement
+                        sur des dispositifs IoT avec une orchestration simplifiée.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">K8s</span>
+                        <span class="tag">Edge AI</span>
+                        <span class="tag">IoT</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card" data-category="ai">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
+                    <span class="article-date">Décembre 2025</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Agents autonomes et AGI</h3>
+                    <p class="article-excerpt">
+                        Les agents IA autonomes capables de planifier et exécuter des tâches complexes
+                        se rapprochent de l'AGI (Artificial General Intelligence). Les implications pour
+                        l'automatisation du développement logiciel sont immenses.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">AGI</span>
+                        <span class="tag">Agents</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card" data-category="web">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">WEB & FRAMEWORKS</span>
+                    <span class="article-date">Novembre 2025</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">WebAssembly et WebGPU</h3>
+                    <p class="article-excerpt">
+                        L'alliance de WebAssembly et WebGPU ouvre des possibilités inédites pour les
+                        applications web haute performance. Des jeux AAA et des outils 3D professionnels
+                        tournent désormais nativement dans le navigateur.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">WASM</span>
+                        <span class="tag">WebGPU</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="MES SOURCES">MES SOURCES</span>
+            </h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">MDN Web Docs</a></li>
+                        <li><a href="#">React Documentation</a></li>
+                        <li><a href="#">Node.js Docs</a></li>
+                        <li><a href="#">AWS Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎓</div>
+                    <h3>Plateformes d'apprentissage</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">Frontend Masters</a></li>
+                        <li><a href="#">Coursera AI</a></li>
+                        <li><a href="#">Udemy Pro</a></li>
+                        <li><a href="#">egghead.io</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📰</div>
+                    <h3>Actualités Tech</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">Hacker News</a></li>
+                        <li><a href="#">Dev.to</a></li>
+                        <li><a href="#">TechCrunch</a></li>
+                        <li><a href="#">The Verge</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h3>Communautés</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">Stack Overflow</a></li>
+                        <li><a href="#">Reddit r/programming</a></li>
+                        <li><a href="#">Discord Dev Community</a></li>
+                        <li><a href="#">GitHub Discussions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <p>&copy; 2026 Portfolio Cyberpunk - Tous droits réservés</p>
+    </footer>
+
+    <script src="scripts/veille.js"></script>
+</body>
+</html>
