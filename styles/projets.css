@@ -346,6 +346,11 @@ body {
     color: var(--darker-bg);
     letter-spacing: 2px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.view-project:hover {
+    text-decoration: none;
 }
 
 /* Card Content */
