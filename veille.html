@@ -34,23 +34,18 @@
         <!-- Categories Filter -->
         <div class="categories-nav">
             <button class="category-btn active" data-category="all">
-                <span class="icon">📡</span>
                 <span>TOUT</span>
             </button>
             <button class="category-btn" data-category="ai">
-                <span class="icon">🤖</span>
                 <span>INTELLIGENCE ARTIFICIELLE</span>
             </button>
             <button class="category-btn" data-category="web">
-                <span class="icon">🌐</span>
                 <span>WEB & FRAMEWORKS</span>
             </button>
             <button class="category-btn" data-category="security">
-                <span class="icon">🔐</span>
                 <span>CYBERSÉCURITÉ</span>
             </button>
             <button class="category-btn" data-category="devops">
-                <span class="icon">⚙️</span>
                 <span>DEVOPS & CLOUD</span>
             </button>
         </div>
@@ -58,31 +53,56 @@
         <!-- Articles Grid -->
         <div class="articles-grid">
             <!-- Article 1 -->
-            <article class="article-card" data-category="ai">
+            <article class="article-card" data-category="security">
                 <div class="card-pulse"></div>
                 <div class="card-header">
-                    <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
+                    <span class="article-category">CYBERSÉCURITÉ</span>
                     <span class="article-date">Février 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">L'avènement des modèles GPT-5</h3>
+                    <h3 class="article-title">Les nouvelles directives de la CNIL pour la protection des données</h3>
                     <p class="article-excerpt">
-                        Les nouveaux modèles de langage GPT-5 révolutionnent l'industrie avec des capacités
-                        de raisonnement multimodal jamais vues. L'impact sur le développement logiciel est
-                        considérable, permettant des assistants de code encore plus performants.
+                        La CNIL actualise ses recommandations sur la conformité RGPD. Ces directives incluent
+                        de nouvelles exigences concernant les audits de sécurité, la gestion des incidents et
+                        la notification des violations de données. Un passage obligé pour tout développeur.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">OpenAI</span>
-                        <span class="tag">LLM</span>
-                        <span class="tag">Multimodal</span>
+                        <span class="tag">RGPD</span>
+                        <span class="tag">CNIL</span>
+                        <span class="tag">Conformité</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://www.cnil.fr" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
             <!-- Article 2 -->
+            <article class="article-card" data-category="devops">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">DEVOPS & CLOUD</span>
+                    <span class="article-date">Février 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Docker et les containers en production</h3>
+                    <p class="article-excerpt">
+                        Les conteneurs Docker sont devenus incontournables en entreprise. Maîtriser Docker, Docker Compose
+                        et les principes de l'orchestration est essentiel pour tout administrateur système et développeur.
+                        Focus sur les meilleures pratiques et la sécurisation des images.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Containers</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.docker.com" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
             <article class="article-card" data-category="web">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -90,24 +110,24 @@
                     <span class="article-date">Janvier 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">React Server Components en production</h3>
+                    <h3 class="article-title">Vue.js 3.5 - Nouveau framework à explorer</h3>
                     <p class="article-excerpt">
-                        Les React Server Components deviennent le standard pour les applications Next.js modernes.
-                        Cette approche hybride client/serveur permet des performances exceptionnelles et une
-                        meilleure expérience développeur.
+                        Vue.js reste un excellent choix pour les applications web modernes. Sa courbe d'apprentissage
+                        douce et sa documentation française complète en font un outil idéal pour progresser en tant que
+                        développeur. Les patterns de composition offrent une flexibilité comparable à React.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Next.js 15</span>
-                        <span class="tag">Performance</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Frontend</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://vuejs.org" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
-            <!-- Article 3 -->
+            <!-- Article 4 -->
             <article class="article-card" data-category="security">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -115,24 +135,49 @@
                     <span class="article-date">Janvier 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Cryptographie post-quantique</h3>
+                    <h3 class="article-title">Injection SQL et prévention - Rappels fondamentaux</h3>
                     <p class="article-excerpt">
-                        Avec l'émergence des ordinateurs quantiques, la cryptographie post-quantique devient
-                        essentielle. Les nouvelles normes NIST offrent une protection contre les menaces futures
-                        tout en restant compatibles avec les systèmes existants.
+                        Les injections SQL restent parmi les vulnérabilités les plus critiques. Utiliser des requêtes
+                        paramétrées, valider les entrées utilisateur et appliquer le principe du moindre privilège sont
+                        des fondamentaux que tout développeur doit maîtriser pour sécuriser son code.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">Quantum</span>
-                        <span class="tag">Crypto</span>
-                        <span class="tag">NIST</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Sécurité</span>
+                        <span class="tag">OWASP</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://owasp.org" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
-            <!-- Article 4 -->
+            <!-- Article 5 -->
+            <article class="article-card" data-category="web">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">WEB & FRAMEWORKS</span>
+                    <span class="article-date">Janvier 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">PHP 8.3 - Améliorations et adoption</h3>
+                    <p class="article-excerpt">
+                        PHP reste omniprésent en entreprise. La version 8.3 apporte des améliorations de performance
+                        et des nouvelles syntaxes. Laravel et Symfony continuent de dominer l'écosystème PHP français.
+                        Incontournable pour les projets web d'envergure.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">Backend</span>
+                        <span class="tag">Laravel</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.php.net" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
             <article class="article-card" data-category="devops">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -140,24 +185,24 @@
                     <span class="article-date">Décembre 2025</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Kubernetes 1.30 et l'IA Edge</h3>
+                    <h3 class="article-title">Git et le contrôle de version - Workflows en équipe</h3>
                     <p class="article-excerpt">
-                        La dernière version de Kubernetes intègre nativement le support pour les workloads
-                        d'IA en edge computing. Cette évolution permet de déployer des modèles ML directement
-                        sur des dispositifs IoT avec une orchestration simplifiée.
+                        Maîtriser Git est essentiel en BTS SIO. Comprendre les branches, les merge requests, la gestion
+                        des conflits et les workflows (GitFlow, trunk-based development) est fondamental pour travailler
+                        en équipe de développement.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">K8s</span>
-                        <span class="tag">Edge AI</span>
-                        <span class="tag">IoT</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Versioning</span>
+                        <span class="tag">Collaboration</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://git-scm.com" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
-            <!-- Article 5 -->
+            <!-- Article 7 -->
             <article class="article-card" data-category="ai">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -165,24 +210,49 @@
                     <span class="article-date">Décembre 2025</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Agents autonomes et AGI</h3>
+                    <h3 class="article-title">ChatGPT et les assistants IA pour le développement</h3>
                     <p class="article-excerpt">
-                        Les agents IA autonomes capables de planifier et exécuter des tâches complexes
-                        se rapprochent de l'AGI (Artificial General Intelligence). Les implications pour
-                        l'automatisation du développement logiciel sont immenses.
+                        Les assistants IA comme ChatGPT et GitHub Copilot transforment le développement logiciel.
+                        Comprendre comment les utiliser efficacement pour générer du code, documenter et debugger
+                        est une compétence moderne incontournable pour tous les développeurs.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">AGI</span>
-                        <span class="tag">Agents</span>
-                        <span class="tag">Automation</span>
+                        <span class="tag">ChatGPT</span>
+                        <span class="tag">IA</span>
+                        <span class="tag">Productivité</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://openai.com" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
-            <!-- Article 6 -->
+            <!-- Article 8 -->
+            <article class="article-card" data-category="security">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">CYBERSÉCURITÉ</span>
+                    <span class="article-date">Décembre 2025</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Authentification multi-facteur (2FA/MFA) - Implémentation</h3>
+                    <p class="article-excerpt">
+                        L'authentification multi-facteur est devenue standard. Implémenter 2FA via TOTP, SMS ou clés de
+                        sécurité est désormais une attente des clients. Découvrez les standards OAuth2, OpenID Connect
+                        et SAML pour une sécurité d'entreprise.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">2FA</span>
+                        <span class="tag">OAuth2</span>
+                        <span class="tag">Authentification</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://cheatsheetseries.owasp.org" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
             <article class="article-card" data-category="web">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -190,20 +260,45 @@
                     <span class="article-date">Novembre 2025</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">WebAssembly et WebGPU</h3>
+                    <h3 class="article-title">Responsive Design et Mobile-First</h3>
                     <p class="article-excerpt">
-                        L'alliance de WebAssembly et WebGPU ouvre des possibilités inédites pour les
-                        applications web haute performance. Des jeux AAA et des outils 3D professionnels
-                        tournent désormais nativement dans le navigateur.
+                        Plus de 70% du trafic web provient du mobile. Adopter une approche mobile-first dès le design
+                        et maîtriser CSS Grid, Flexbox et les media queries est fondamental. Bootstrap et Tailwind CSS
+                        facilitent la création d'interfaces responsives.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">WASM</span>
-                        <span class="tag">WebGPU</span>
-                        <span class="tag">Performance</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">Mobile</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://www.w3.org" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="article-card" data-category="devops">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">DEVOPS & CLOUD</span>
+                    <span class="article-date">Novembre 2025</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">Déploiement continu avec GitHub Actions</h3>
+                    <p class="article-excerpt">
+                        Automatiser le déploiement via CI/CD est devenu standard. GitHub Actions offre une solution
+                        intégrée gratuite pour tester, builder et déployer automatiquement vos applications. Un gain
+                        de temps et de sécurité considérable.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/features/actions" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
         </div>
@@ -217,34 +312,34 @@
             <div class="resources-grid">
                 <div class="resource-card">
                     <div class="resource-icon">📚</div>
-                    <h3>Documentation</h3>
+                    <h3>Documentation Officielle</h3>
                     <ul class="resource-list">
-                        <li><a href="#">MDN Web Docs</a></li>
-                        <li><a href="#">React Documentation</a></li>
-                        <li><a href="#">Node.js Docs</a></li>
-                        <li><a href="#">AWS Documentation</a></li>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://devdocs.io" target="_blank">DevDocs.io</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                        <li><a href="https://symfony.com/doc" target="_blank">Symfony Framework</a></li>
                     </ul>
                 </div>
 
                 <div class="resource-card">
                     <div class="resource-icon">🎓</div>
-                    <h3>Plateformes d'apprentissage</h3>
+                    <h3>Apprentissage et Tutos</h3>
                     <ul class="resource-list">
-                        <li><a href="#">Frontend Masters</a></li>
-                        <li><a href="#">Coursera AI</a></li>
-                        <li><a href="#">Udemy Pro</a></li>
-                        <li><a href="#">egghead.io</a></li>
+                        <li><a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a></li>
+                        <li><a href="https://www.youtube.com" target="_blank">YouTube (Grafikart, etc)</a></li>
+                        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                        <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
                     </ul>
                 </div>
 
                 <div class="resource-card">
                     <div class="resource-icon">📰</div>
-                    <h3>Actualités Tech</h3>
+                    <h3>Actualités & Blogs Tech</h3>
                     <ul class="resource-list">
-                        <li><a href="#">Hacker News</a></li>
-                        <li><a href="#">Dev.to</a></li>
-                        <li><a href="#">TechCrunch</a></li>
-                        <li><a href="#">The Verge</a></li>
+                        <li><a href="https://news.ycombinator.com" target="_blank">Hacker News</a></li>
+                        <li><a href="https://dev.to" target="_blank">Dev.to</a></li>
+                        <li><a href="https://www.developpez.com" target="_blank">Developpez.com (FR)</a></li>
+                        <li><a href="https://www.lemonde.fr/pixels" target="_blank">Le Monde - Pixels</a></li>
                     </ul>
                 </div>
 
@@ -252,10 +347,31 @@
                     <div class="resource-icon">💬</div>
                     <h3>Communautés</h3>
                     <ul class="resource-list">
-                        <li><a href="#">Stack Overflow</a></li>
-                        <li><a href="#">Reddit r/programming</a></li>
-                        <li><a href="#">Discord Dev Community</a></li>
-                        <li><a href="#">GitHub Discussions</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                        <li><a href="https://reddit.com/r/france" target="_blank">Reddit r/france Dev</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔐</div>
+                    <h3>Sécurité & Conformité</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://owasp.org" target="_blank">OWASP</a></li>
+                        <li><a href="https://www.cnil.fr" target="_blank">CNIL</a></li>
+                        <li><a href="https://cyber.gouv.fr" target="_blank">ANSSI</a></li>
+                        <li><a href="https://securityheaders.com" target="_blank">Security Headers</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚙️</div>
+                    <h3>Outils & Plateforme</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
+                        <li><a href="https://www.jetbrains.com" target="_blank">JetBrains IDEs</a></li>
+                        <li><a href="https://git-scm.com" target="_blank">Git</a></li>
+                        <li><a href="https://www.docker.com" target="_blank">Docker</a></li>
                     </ul>
                 </div>
             </div>
