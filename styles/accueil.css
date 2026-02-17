@@ -335,8 +335,8 @@ body {
 
 .cyber-profile {
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,8 +344,8 @@ body {
 
 .profile-hexagon {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 240px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
