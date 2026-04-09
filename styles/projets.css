@@ -116,6 +116,104 @@
     font-size: 1rem;
 }
 
+/* ===== Dossiers Épreuve E6 ===== */
+.e6-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem 4rem;
+}
+
+.e6-inner {
+    position: relative;
+    text-align: center;
+    border: 2px solid var(--neon-pink);
+    background: rgba(255, 0, 110, 0.04);
+    padding: 3rem 4rem;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+    max-width: 680px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.15);
+}
+
+.e6-inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.e6-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.e6-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px rgba(255, 0, 110, 0.6);
+    margin-bottom: 1rem;
+}
+
+.e6-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.e6-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark-bg);
+    background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+    border: none;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.e6-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.e6-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 0, 110, 0.5);
+}
+
+.e6-btn:hover::after {
+    opacity: 1;
+}
+
+.e6-btn-icon {
+    font-size: 1rem;
+}
+
 body {
     font-family: 'Rajdhani', sans-serif;
     background-color: var(--dark-bg);
