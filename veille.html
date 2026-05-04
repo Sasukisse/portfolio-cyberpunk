@@ -28,7 +28,7 @@
             <h1 class="page-title">
                 <span class="glitch-text" data-text="VEILLE TECHNOLOGIQUE">VEILLE TECHNOLOGIQUE</span>
             </h1>
-            <p class="page-subtitle">Ranorex, tests automatisés, IA et langages qui montent</p>
+            <p class="page-subtitle">Ranorex, tests automatisés et intelligence artificielle</p>
         </header>
 
         <!-- Categories Filter -->
@@ -45,9 +45,6 @@
             <button class="category-btn" data-category="ai">
                 <span>INTELLIGENCE ARTIFICIELLE</span>
             </button>
-            <button class="category-btn" data-category="languages">
-                <span>LANGAGES TENDANCE</span>
-            </button>
         </div>
 
         <!-- Articles Grid -->
@@ -57,19 +54,19 @@
                 <div class="card-pulse"></div>
                 <div class="card-header">
                     <span class="article-category">RANOREX</span>
-                    <span class="article-date">Mars 2026</span>
+                    <span class="article-date">Avril 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Ranorex Studio: tendances 2026 du test UI multi-plateforme</h3>
+                    <h3 class="article-title">Ranorex Studio : automatisation desktop et web en environnement CI</h3>
                     <p class="article-excerpt">
-                        Synthèse des retours terrain sur l'automatisation desktop, web et mobile avec Ranorex Studio.
-                        Je retiens surtout l'intérêt du repository d'objets, la maintenance facilitée des scripts et
-                        l'intégration avec les pipelines CI pour stabiliser les campagnes de tests en production.
+                        Retour d'expérience sur l'intégration de Ranorex Studio dans un pipeline CI/CD.
+                        Le repository d'objets centralisé et la gestion des données de test par CSV permettent
+                        de maintenir des suites stables même lors de refactorisations fréquentes de l'interface.
                     </p>
                     <div class="article-tags">
                         <span class="tag">Ranorex</span>
+                        <span class="tag">CI/CD</span>
                         <span class="tag">UI Testing</span>
-                        <span class="tag">CI</span>
                     </div>
                 </div>
                 <div class="card-footer">
@@ -78,6 +75,31 @@
             </article>
 
             <!-- Article 2 -->
+            <article class="article-card" data-category="ai">
+                <div class="card-pulse"></div>
+                <div class="card-header">
+                    <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
+                    <span class="article-date">Mars 2026</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="article-title">GPT-4o dans les pipelines de test : génération et analyse automatique</h3>
+                    <p class="article-excerpt">
+                        Les équipes QA expérimentent l'intégration de modèles IA pour générer des cas de test
+                        à partir des spécifications et analyser les rapports d'échec. Le gain de temps est réel
+                        sur la phase de conception, à condition de valider systématiquement les sorties produites.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">GPT-4o</span>
+                        <span class="tag">Test Generation</span>
+                        <span class="tag">QA</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://openai.com/news/" class="read-more">LIRE PLUS &gt;&gt;</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
             <article class="article-card" data-category="testing">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -85,11 +107,11 @@
                     <span class="article-date">Février 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Playwright + API mocking: accélérer les tests E2E</h3>
+                    <h3 class="article-title">Playwright + API mocking : accélérer les tests E2E sans dépendances externes</h3>
                     <p class="article-excerpt">
-                        Les équipes QA adoptent de plus en plus Playwright avec du mocking réseau pour réduire la
-                        dépendance aux environnements instables. Le gain principal est la rapidité d'exécution,
-                        la reproductibilité des scénarios et une meilleure fiabilité des tests de régression.
+                        Le mocking réseau avec Playwright réduit la dépendance aux environnements instables
+                        et améliore la reproductibilité des scénarios. Les équipes rapportent des gains
+                        significatifs en rapidité d'exécution et en fiabilité des campagnes de régression.
                     </p>
                     <div class="article-tags">
                         <span class="tag">Playwright</span>
@@ -102,119 +124,19 @@
                 </div>
             </article>
 
-            <!-- Article 3 -->
-            <article class="article-card" data-category="ai">
-                <div class="card-pulse"></div>
-                <div class="card-header">
-                    <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
-                    <span class="article-date">Janvier 2026</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="article-title">LLM pour la génération de cas de tests: où l'IA aide vraiment</h3>
-                    <p class="article-excerpt">
-                        Les assistants IA accélèrent la création de jeux de données, les scénarios de test et la
-                        documentation QA. Le point clé reste la validation humaine pour éviter les faux positifs,
-                        surtout sur les règles métier complexes et les parcours critiques.
-                    </p>
-                    <div class="article-tags">
-                        <span class="tag">LLM</span>
-                        <span class="tag">QA</span>
-                        <span class="tag">Test Design</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="https://openai.com/news/" class="read-more">LIRE PLUS &gt;&gt;</a>
-                </div>
-            </article>
-
             <!-- Article 4 -->
-            <article class="article-card" data-category="languages">
-                <div class="card-pulse"></div>
-                <div class="card-header">
-                    <span class="article-category">LANGAGES TENDANCE</span>
-                    <span class="article-date">Janvier 2026</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="article-title">Rust continue de gagner du terrain dans les systèmes critiques</h3>
-                    <p class="article-excerpt">
-                        Rust reste très suivi pour ses garanties mémoire et sa fiabilité en production.
-                        Les nouvelles bibliothèques et l'écosystème tooling facilitent l'adoption progressive,
-                        notamment pour remplacer des composants C/C++ sensibles.
-                    </p>
-                    <div class="article-tags">
-                        <span class="tag">Rust</span>
-                        <span class="tag">Performance</span>
-                        <span class="tag">Sécurité Mémoire</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.rust-lang.org" class="read-more">LIRE PLUS &gt;&gt;</a>
-                </div>
-            </article>
-
-            <!-- Article 5 -->
-            <article class="article-card" data-category="ranorex">
-                <div class="card-pulse"></div>
-                <div class="card-header">
-                    <span class="article-category">RANOREX</span>
-                    <span class="article-date">Janvier 2026</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="article-title">Ranorex + Selenium Grid: stratégie hybride en entreprise</h3>
-                    <p class="article-excerpt">
-                        Les équipes mixtes utilisent Ranorex pour la robustesse desktop/UI et Selenium Grid pour
-                        la scalabilité navigateur. Cette approche permet d'exécuter plus de tests parallèles tout en
-                        gardant une maintenance raisonnable des suites automatisées.
-                    </p>
-                    <div class="article-tags">
-                        <span class="tag">Ranorex</span>
-                        <span class="tag">Selenium</span>
-                        <span class="tag">Scalabilité</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.ranorex.com" class="read-more">LIRE PLUS &gt;&gt;</a>
-                </div>
-            </article>
-
-            <!-- Article 6 -->
-            <article class="article-card" data-category="testing">
-                <div class="card-pulse"></div>
-                <div class="card-header">
-                    <span class="article-category">TESTS AUTOMATISÉS</span>
-                    <span class="article-date">Décembre 2025</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="article-title">Shift-left testing: qualité continue dès le pull request</h3>
-                    <p class="article-excerpt">
-                        De plus en plus d'équipes déplacent la validation qualité au plus tôt dans le cycle de dev.
-                        L'objectif est de lancer des tests automatiques ciblés à chaque PR pour réduire le coût des
-                        anomalies détectées tardivement.
-                    </p>
-                    <div class="article-tags">
-                        <span class="tag">Shift-Left</span>
-                        <span class="tag">CI/CD</span>
-                        <span class="tag">Quality Gates</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="https://martinfowler.com/articles/practical-test-pyramid.html" class="read-more">LIRE PLUS &gt;&gt;</a>
-                </div>
-            </article>
-
-            <!-- Article 7 -->
             <article class="article-card" data-category="ai">
                 <div class="card-pulse"></div>
                 <div class="card-header">
                     <span class="article-category">INTELLIGENCE ARTIFICIELLE</span>
-                    <span class="article-date">Décembre 2025</span>
+                    <span class="article-date">Janvier 2026</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Agents IA pour les développeurs: productivité et limites</h3>
+                    <h3 class="article-title">Agents IA pour les développeurs : productivité et limites en 2026</h3>
                     <p class="article-excerpt">
                         Les copilotes de code accélèrent la génération, le refactoring et la documentation.
-                        Les retours les plus fiables montrent que le meilleur ROI vient d'un usage guidé par des
-                        conventions de projet strictes et une relecture systématique du code proposé.
+                        Les retours terrain montrent que le meilleur ROI vient d'un usage guidé par des conventions
+                        de projet strictes et une relecture systématique du code proposé.
                     </p>
                     <div class="article-tags">
                         <span class="tag">Copilot</span>
@@ -227,32 +149,32 @@
                 </div>
             </article>
 
-            <!-- Article 8 -->
-            <article class="article-card" data-category="languages">
+            <!-- Article 5 -->
+            <article class="article-card" data-category="testing">
                 <div class="card-pulse"></div>
                 <div class="card-header">
-                    <span class="article-category">LANGAGES TENDANCE</span>
+                    <span class="article-category">TESTS AUTOMATISÉS</span>
                     <span class="article-date">Décembre 2025</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">TypeScript reste dominant pour les apps web à grande échelle</h3>
+                    <h3 class="article-title">Shift-left testing : intégrer la qualité dès le pull request</h3>
                     <p class="article-excerpt">
-                        Le typage statique continue de réduire les régressions côté front et back Node.js.
-                        Les tendances confirment TypeScript comme socle principal des projets web modernes,
-                        notamment avec React, Next.js et les architectures orientées API.
+                        Déplacer la validation qualité au plus tôt dans le cycle de développement réduit
+                        le coût des anomalies détectées tardivement. Lancer des tests automatiques ciblés
+                        à chaque PR devient une norme dans les équipes DevOps matures.
                     </p>
                     <div class="article-tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Web</span>
-                        <span class="tag">Scalabilité</span>
+                        <span class="tag">Shift-Left</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Quality Gates</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://www.typescriptlang.org" class="read-more">LIRE PLUS &gt;&gt;</a>
+                    <a href="https://martinfowler.com/articles/practical-test-pyramid.html" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
 
-            <!-- Article 9 -->
+            <!-- Article 6 -->
             <article class="article-card" data-category="ranorex">
                 <div class="card-pulse"></div>
                 <div class="card-header">
@@ -260,11 +182,11 @@
                     <span class="article-date">Novembre 2025</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="article-title">Premiers pas Ranorex: architecture d'un projet de test maintenable</h3>
+                    <h3 class="article-title">Architecture d'un projet Ranorex maintenable dès le départ</h3>
                     <p class="article-excerpt">
-                        Article orienté bonnes pratiques: découpage modulaire, nommage clair des repositories
-                        d'objets et séparation des données de test. Ces bases sont essentielles pour éviter
-                        l'explosion de maintenance quand la couverture de tests augmente.
+                        Bonnes pratiques de structuration : découpage modulaire des suites de tests, nommage
+                        clair des repositories d'objets et séparation stricte des données de test. Ces bases
+                        évitent l'explosion de la maintenance quand la couverture augmente.
                     </p>
                     <div class="article-tags">
                         <span class="tag">Ranorex</span>
@@ -274,31 +196,6 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://support.ranorex.com/hc/en-us" class="read-more">LIRE PLUS &gt;&gt;</a>
-                </div>
-            </article>
-
-            <!-- Article 10 -->
-            <article class="article-card" data-category="languages">
-                <div class="card-pulse"></div>
-                <div class="card-header">
-                    <span class="article-category">LANGAGES TENDANCE</span>
-                    <span class="article-date">Novembre 2025</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="article-title">Python, Go et JavaScript: trio leader des stacks 2026</h3>
-                    <p class="article-excerpt">
-                        Les enquêtes de fin 2025 confirment Python pour l'IA/data, Go pour les services cloud
-                        et JavaScript/TypeScript pour les interfaces et APIs. Cette combinaison couvre une grande
-                        partie des besoins actuels en entreprise.
-                    </p>
-                    <div class="article-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Go</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.jetbrains.com/lp/devecosystem-2025/" class="read-more">LIRE PLUS &gt;&gt;</a>
                 </div>
             </article>
         </div>
@@ -344,34 +241,13 @@
                 </div>
 
                 <div class="resource-card">
-                    <div class="resource-icon">💬</div>
-                    <h3>Langages Tendance</h3>
-                    <ul class="resource-list">
-                        <li><a href="https://www.tiobe.com/tiobe-index/" target="_blank">TIOBE Index</a></li>
-                        <li><a href="https://survey.stackoverflow.co/" target="_blank">Stack Overflow Survey</a></li>
-                        <li><a href="https://www.jetbrains.com/lp/devecosystem/" target="_blank">JetBrains Ecosystem</a></li>
-                    </ul>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">🔐</div>
+                    <div class="resource-icon">🔍</div>
                     <h3>Qualité Logicielle</h3>
                     <ul class="resource-list">
                         <li><a href="https://www.sonarsource.com/" target="_blank">Sonar</a></li>
-                        <li><a href="https://www.cypress.io/blog" target="_blank">Cypress Blog</a></li>
                         <li><a href="https://testing.googleblog.com/" target="_blank">Google Testing Blog</a></li>
                         <li><a href="https://www.atlassian.com/continuous-delivery/software-testing" target="_blank">Atlassian Testing</a></li>
-                    </ul>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">⚙️</div>
-                    <h3>Plateformes & Outils Dev</h3>
-                    <ul class="resource-list">
-                        <li><a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
-                        <li><a href="https://www.jetbrains.com" target="_blank">JetBrains IDEs</a></li>
-                        <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
-                        <li><a href="https://azure.microsoft.com/products/devops" target="_blank">Azure DevOps</a></li>
+                        <li><a href="https://www.ministryoftesting.com" target="_blank">Ministry of Testing</a></li>
                     </ul>
                 </div>
             </div>
