@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.disabled = true;
         submitButton.style.opacity = '0.6';
         formStatus.className = 'form-status';
-        formStatus.textContent = '⏳ Envoi en cours...';
+        formStatus.textContent = 'Envoi en cours...';
         formStatus.style.display = 'block';
 
         const templateParams = {
