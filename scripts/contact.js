@@ -8,31 +8,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Simulate form submission
+
         const submitButton = form.querySelector('.submit-button');
         submitButton.disabled = true;
         submitButton.style.opacity = '0.6';
-        
-        // Simulate loading
-        setTimeout(() => {
-            // Success
-            formStatus.className = 'form-status success';
-            formStatus.textContent = '✓ MESSAGE ENVOYÉ AVEC SUCCÈS!';
-            
-            // Reset form
-            form.reset();
-            submitButton.disabled = false;
-            submitButton.style.opacity = '1';
-            
-            // Hide status after 5 seconds
-            setTimeout(() => {
-                formStatus.style.display = 'none';
-            }, 5000);
-            
-            // Trigger celebration particles
-            createCelebrationParticles();
-        }, 2000);
+        formStatus.className = 'form-status';
+        formStatus.textContent = '⏳ Envoi en cours...';
+        formStatus.style.display = 'block';
+
+        const templateParams = {
+            from_name: document.getElementById('name').value,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+
+        emailjs.send('service_vzz79jl', 'template_0yddo3m', templateParams)
+            .then(() => {
+                formStatus.className = 'form-status success';
+                formStatus.textContent = '✓ MESSAGE ENVOYÉ AVEC SUCCÈS!';
+                form.reset();
+                createCelebrationParticles();
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            })
+            .catch((error) => {
+                formStatus.className = 'form-status error';
+                formStatus.textContent = '✗ Erreur lors de l\'envoi. Veuillez réessayer.';
+                console.error('EmailJS error:', error);
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.style.opacity = '1';
+            });
     });
 
     // Form input animations
