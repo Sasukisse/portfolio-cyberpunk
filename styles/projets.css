@@ -461,8 +461,9 @@ body {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2.5rem;
+    justify-content: center;
 }
 
 /* Project Card */
