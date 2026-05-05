@@ -347,7 +347,7 @@ body {
 /* Main Content */
 .projects-main {
     min-height: 100vh;
-    padding: 8rem 4rem 4rem;
+    padding: 8rem 2rem 4rem;
     position: relative;
     z-index: 2;
 }
@@ -461,9 +461,10 @@ body {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 380px);
+    grid-template-columns: repeat(auto-fit, 380px);
     gap: 2.5rem;
     justify-content: center;
+    width: 100%;
 }
 
 /* Project Card */
